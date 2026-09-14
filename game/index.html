@@ -4,35 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
     <style>
+        main {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            font-family: 'Roboto';
+        }
+
+        body {
+            background-color: #4EA5D9;
+        }
+
         h1 {
-            color: red;
+            color: #A20021;
             font-family: sans-serif;
             border-bottom: 1px solid blue;
         }
+
+        h2 {
+            color: #a7374d;
+            margin-left: 100px;
+        }
+
+        h3 {
+            margin-left: 100px;
+        }
+
+        p {
+            margin-left: 100px;
+        }
+
+        a {
+            color: #FF686B;
+        }
+
+        ul {
+            margin-left: 100px;
+        }
+
+        img.side {
+            float: right;
+            margin: 12px;
+        }
+
+        footer {
+            background-color: #B9E6FF;
+        }
+
+
 
         blockquote {
             background-color: lightgray;
             padding: 1rem;
         }
     </style>
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
+
 </head>
 
 <body>
     <main>
         <header>
+            <picture>
+                <source type="image/svg+xml" srcset="/images/dig-dugSVG.svg">
+                <img srcset="/images/digdug.png" alt="No SVG support">
+            </picture>
+
             <h1> Dig Dug </h1>
 
 
             <h2> Publishing Info </h2>
 
-
+            <p>
             <ul>
                 <li> <strong> Published by: </strong> <em> Atari, Inc. </em> </li>
-                <li> <strong> Developed by: </strong> <em> Namco Limited </em> </li>
+                <li> <strong> Developed by: </strong> <em> <abbr title="Nakamura Manufacturing Company">Namco</abbr>
+                        Limited </em> </li>
                 <li> <strong> Released: </strong> <em> Apr, 1982 </em> </li>
             </ul>
+            </p>
 
 
         </header>
@@ -42,14 +100,20 @@
 
         <hr>
 
-        <img src="/images/dig-dug-burnt.png" alt = "Screenshot of Dig Dug showcasing gameplay" ><br>
+        <img src="/images/dig-dug-burnt.png" alt="Screenshot of Dig Dug showcasing gameplay">
+        <img class="side" src="/images/fygar_inflate.jpg" alt="Dig Dug Box Art"> <br>
+        <p>
 
-        Dig Dug is a 1-2 player arcade game in which you have to use your shovel to dig your way through the earth.
-        Stopping
-        you from doing this are two monsters, called Pooka and Fygar, who will continually chase you around. The only
-        weapon
-        that you carry is an air pump, which you can use to inflate the monsters to the point where they explode. [...]
+            Dig Dug is a 1-2 player arcade game in which you have to use your shovel to dig your way through the earth.
 
+            <br>
+
+            Stopping you from doing this are two monsters, called Pooka and Fygar, who will continually chase you
+            around.
+            The only weapon that you carry is an air pump, which you can use to inflate the monsters to the point where
+            they
+            explode. [...]
+        </p>
 
 
         <h2> Game Categories </h2>
@@ -57,16 +121,16 @@
         <hr>
 
         <ul>
-            <li> Genre: Action </li>
-            <li> Side view </li>
-            <li> Visual: Fixed </li>
-            <li> Gameplay: Arcade </li>
+            <li> <strong> Genre </strong>: Action </li>
+            <li> <strong> Camera </strong>: Side View </li>
+            <li> <strong> Visual </strong>: Fixed </li>
+            <li> <strong> Gameplay </strong>: Arcade </li>
         </ul>
 
 
         <h3> Quote </h3>
 
-        <blockquote>
+        <p>
             This definitely goes under the heading of "Games That Were Made While a Programmer Was on Drugs," or at
             least
             had a
@@ -74,14 +138,26 @@
             <br>
             -- <a href="https://www.mobygames.com/mobyrank/source/sourceId,540/">
                 https://www.mobygames.com/mobyrank/source/sourceId,540/ </a>
-        </blockquote>
+        </p>
+
+        <br>
+
+        <p>
+            If DigDug piques your interest, <a href="big/pic1.html">here's the original Japanese box art!</a>
+        </p>
+
+
     </main>
 
-    <footer>
-        Source
-        <br>
-        - <a href="https://www.mobygames.com/game/arcade/dig-dug"> https://www.mobygames.com/game/arcade/dig-dug </a>
-    </footer>
+    <div id="SourceLink">
+        <footer>
+            Source
+            <br>
+            - <a href="https://www.mobygames.com/game/arcade/dig-dug" target="_blank">
+                https://www.mobygames.com/game/arcade/dig-dug
+            </a>
+        </footer>
+    </div>
 
 </body>
 
